@@ -269,7 +269,7 @@ public class MarkdownView extends WebView {
         loadMarkdown(Utils.getStringFromFile(file));
     }
 //将String改成Url
-    public void loadMarkdownFromUrl(Url url) {
+    public void loadMarkdownFromUrl(String url) {
         new LoadMarkdownUrlTask().execute(url);
     }
 
